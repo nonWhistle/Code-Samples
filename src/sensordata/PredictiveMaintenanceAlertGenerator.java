@@ -1,4 +1,4 @@
-package uk.co.dhl.smas.ui.view.conditionmonitoring.predictivemaintenance;
+package sensordata;
 
 import lombok.Getter;
 import org.springframework.context.ApplicationEventPublisher;

@@ -1,7 +1,4 @@
-package uk.co.dhl.smas.ui.view.conditionmonitoring.predictivemaintenance;
-
-import java.time.ZonedDateTime;
-import java.util.TreeMap;
+package sensordata;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,10 +15,13 @@ import uk.co.dhl.smas.backend.machine.Machine;
 import uk.co.dhl.smas.backend.user.UserDetailsServiceImpl;
 import uk.co.dhl.smas.ui.view.utils.FormattedZoneDateTimes;
 
+import java.time.ZonedDateTime;
+import java.util.TreeMap;
+
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.util.ReflectionTestUtils.getField;
-import static org.springframework.test.util.ReflectionTestUtils.setField;
 
 @ExtendWith(MockitoExtension.class)
 class PredictiveMaintenanceAlertGeneratorTest implements FormattedZoneDateTimes {
